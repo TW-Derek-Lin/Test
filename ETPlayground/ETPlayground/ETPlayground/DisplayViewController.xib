@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DisplayViewController" customModule="ETPlayground" customModuleProvider="target">
+            <connections>
+                <outlet property="displayImageView" destination="obA-BH-oV6" id="F11-Ae-DvE"/>
+                <outlet property="scrollView" destination="WKj-UQ-iJV" id="tuc-go-HLn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WKj-UQ-iJV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="obA-BH-oV6">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="obA-BH-oV6" firstAttribute="top" secondItem="WKj-UQ-iJV" secondAttribute="top" id="0ng-tw-aNj"/>
+                        <constraint firstItem="obA-BH-oV6" firstAttribute="centerX" secondItem="WKj-UQ-iJV" secondAttribute="centerX" id="Ov3-TV-IOd"/>
+                        <constraint firstItem="obA-BH-oV6" firstAttribute="leading" secondItem="WKj-UQ-iJV" secondAttribute="leading" id="UnP-tU-qiP"/>
+                        <constraint firstItem="obA-BH-oV6" firstAttribute="centerY" secondItem="WKj-UQ-iJV" secondAttribute="centerY" id="wbA-q9-UBp"/>
+                        <constraint firstAttribute="bottom" secondItem="obA-BH-oV6" secondAttribute="bottom" id="xZZ-YG-j1w"/>
+                        <constraint firstAttribute="trailing" secondItem="obA-BH-oV6" secondAttribute="trailing" id="ynJ-1f-0pf"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WKj-UQ-iJV" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="4EM-8d-ro2"/>
+                <constraint firstItem="WKj-UQ-iJV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MvB-Kz-DGS"/>
+                <constraint firstItem="WKj-UQ-iJV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Z8Z-0A-npn"/>
+                <constraint firstAttribute="trailing" secondItem="WKj-UQ-iJV" secondAttribute="trailing" id="n6m-i3-YJg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="154.27286356821591"/>
+        </view>
+    </objects>
+</document>
